@@ -1,0 +1,163 @@
+[gd_scene load_steps=2 format=3 uid="uid://bjvy3dge6b467"]
+
+[ext_resource type="FontFile" uid="uid://c0dapwa55o5a5" path="res://assets/fonts/Habbo.ttf" id="1_rdlvm"]
+
+[node name="This Cycle" type="Label"]
+self_modulate = Color(0, 0.995854, 0.88158, 1)
+texture_filter = 2
+offset_right = 155.0
+offset_bottom = 33.25
+theme_override_fonts/font = ExtResource("1_rdlvm")
+theme_override_font_sizes/font_size = 42
+text = "THIS CYCLE"
+horizontal_alignment = 1
+
+[node name="ColorRect" type="ColorRect" parent="."]
+z_index = -1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -8.0
+offset_top = -4.0
+offset_right = 6.0
+offset_bottom = 5.75
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.234239, 0.478751, 0.572789, 0.796078)
+
+[node name="Margin" type="MarginContainer" parent="."]
+layout_mode = 1
+offset_left = -74.0
+offset_top = 47.0
+offset_right = 254.0
+offset_bottom = 616.0
+
+[node name="Parts" type="VBoxContainer" parent="Margin"]
+layout_mode = 2
+
+[node name="Alpha" type="VBoxContainer" parent="Margin/Parts"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Margin/Parts/Alpha"]
+texture_filter = 2
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_rdlvm")
+theme_override_font_sizes/font_size = 42
+text = "Alpha Part"
+horizontal_alignment = 1
+
+[node name="Scroll" type="ScrollContainer" parent="Margin/Parts/Alpha"]
+custom_minimum_size = Vector2(0, 120)
+layout_mode = 2
+horizontal_scroll_mode = 0
+
+[node name="Text" type="Label" parent="Margin/Parts/Alpha/Scroll"]
+texture_filter = 2
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_rdlvm")
+theme_override_font_sizes/font_size = 36
+text = "Crop Harvested
+Crop Harvested
+Crop Harvested
+Crop Harvested
+Crop Harvested
+Crop Harvested
+Crop Harvested
+"
+
+[node name="Space" type="Control" parent="Margin/Parts/Alpha"]
+custom_minimum_size = Vector2(0, 8)
+layout_mode = 2
+
+[node name="Separator" type="ColorRect" parent="Margin/Parts/Alpha"]
+custom_minimum_size = Vector2(0, 2)
+layout_mode = 2
+
+[node name="Space2" type="Control" parent="Margin/Parts/Alpha"]
+custom_minimum_size = Vector2(0, 8)
+layout_mode = 2
+
+[node name="Beta" type="VBoxContainer" parent="Margin/Parts"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Margin/Parts/Beta"]
+texture_filter = 2
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_rdlvm")
+theme_override_font_sizes/font_size = 42
+text = "Beta Part"
+horizontal_alignment = 1
+
+[node name="Scroll" type="ScrollContainer" parent="Margin/Parts/Beta"]
+custom_minimum_size = Vector2(0, 120)
+layout_mode = 2
+horizontal_scroll_mode = 0
+
+[node name="Text" type="Label" parent="Margin/Parts/Beta/Scroll"]
+texture_filter = 2
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_rdlvm")
+theme_override_font_sizes/font_size = 36
+text = "Crop Harvested
+Crop Harvested
+Crop Harvested
+Crop Harvested
+Crop Harvested
+Crop Harvested
+Crop Harvested
+"
+
+[node name="Space" type="Control" parent="Margin/Parts/Beta"]
+custom_minimum_size = Vector2(0, 8)
+layout_mode = 2
+
+[node name="Separator" type="ColorRect" parent="Margin/Parts/Beta"]
+custom_minimum_size = Vector2(0, 2)
+layout_mode = 2
+
+[node name="Space2" type="Control" parent="Margin/Parts/Beta"]
+custom_minimum_size = Vector2(0, 8)
+layout_mode = 2
+
+[node name="Gamma" type="VBoxContainer" parent="Margin/Parts"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Margin/Parts/Gamma"]
+texture_filter = 2
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_rdlvm")
+theme_override_font_sizes/font_size = 42
+text = "Gamma Part"
+horizontal_alignment = 1
+
+[node name="Scroll" type="ScrollContainer" parent="Margin/Parts/Gamma"]
+custom_minimum_size = Vector2(0, 120)
+layout_mode = 2
+horizontal_scroll_mode = 0
+
+[node name="Text" type="Label" parent="Margin/Parts/Gamma/Scroll"]
+texture_filter = 2
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_rdlvm")
+theme_override_font_sizes/font_size = 36
+text = "Crop Harvested
+Crop Harvested
+Crop Harvested
+Crop Harvested
+Crop Harvested
+Crop Harvested
+Crop Harvested
+"
+
+[node name="Space" type="Control" parent="Margin/Parts/Gamma"]
+custom_minimum_size = Vector2(0, 8)
+layout_mode = 2
+
+[node name="Separator" type="ColorRect" parent="Margin/Parts/Gamma"]
+custom_minimum_size = Vector2(0, 2)
+layout_mode = 2
+
+[node name="Space2" type="Control" parent="Margin/Parts/Gamma"]
+custom_minimum_size = Vector2(0, 8)
+layout_mode = 2

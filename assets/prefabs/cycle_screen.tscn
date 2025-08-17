@@ -1,0 +1,74 @@
+[gd_scene load_steps=6 format=3 uid="uid://bdyw2lyo113q1"]
+
+[ext_resource type="Script" uid="uid://bqn2sbyrjrd5k" path="res://scripts/cycle_screen.gd" id="1_cu21g"]
+[ext_resource type="PackedScene" uid="uid://bjvy3dge6b467" path="res://assets/prefabs/part_actions.tscn" id="1_p6k4s"]
+[ext_resource type="Texture2D" uid="uid://bi0lnv2pbbkng" path="res://assets/gui/star.png" id="2_i33sv"]
+[ext_resource type="Texture2D" uid="uid://ltriokr1c7k6" path="res://assets/gui/cross.png" id="2_xrkoj"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_xrkoj"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchor_right = 0.735156
+anchor_bottom = 1.0
+grow_horizontal = 2
+size_flags_horizontal = 4
+script = ExtResource("1_cu21g")
+match_color = Color(0, 0.996078, 0.882353, 1)
+mismatch_color = Color(0.780392, 0.427451, 0, 1)
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.796078)
+
+[node name="Last" parent="ColorRect" instance=ExtResource("1_p6k4s")]
+layout_mode = 0
+offset_left = 160.0
+offset_top = 48.0
+offset_right = 315.0
+offset_bottom = 81.25
+text = "Last Cycle"
+
+[node name="This" parent="ColorRect" instance=ExtResource("1_p6k4s")]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -339.0
+offset_top = 48.0
+offset_right = -184.0
+offset_bottom = 81.25
+grow_horizontal = 0
+text = "This Cycle"
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -57.0
+offset_bottom = 65.0
+grow_horizontal = 0
+theme_override_styles/focus = SubResource("StyleBoxEmpty_xrkoj")
+icon = ExtResource("2_xrkoj")
+expand_icon = true
+
+[node name="Star" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -40.0
+offset_top = -80.0
+offset_right = 40.0
+grow_horizontal = 2
+grow_vertical = 0
+texture = ExtResource("2_i33sv")
+stretch_mode = 5
